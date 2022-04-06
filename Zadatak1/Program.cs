@@ -11,7 +11,7 @@ namespace Aplikacija1
 {
     class Program
     {
-        static void get_all_curencies()
+        static void GetAllCurrencies()
         {
             var client = new RestClient("https://api.exchange.coinbase.com");
             var request = new RestRequest("currencies", Method.Get);
@@ -138,7 +138,7 @@ namespace Aplikacija1
 
         static void Main(string[] args)
         {
-            get_all_curencies();
+            GetAllCurrencies();
 
             GetTicker("ETH-USD");
 
